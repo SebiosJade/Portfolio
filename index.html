@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Jhade Sebios - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231a1a1a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2387ceeb;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='45' font-weight='900' fill='white' text-anchor='middle'%3ESJS%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Floating Shapes Background -->
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">SJS</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="brightness-control">
+                <button class="brightness-btn" id="brightnessBtn" aria-label="Adjust brightness">
+                    <span class="brightness-icon">🔆</span>
+                </button>
+                <div class="brightness-panel" id="brightnessPanel">
+                    <label for="brightnessSlider">Brightness</label>
+                    <input type="range" id="brightnessSlider" min="0" max="100" value="100" step="10">
+                    <div class="brightness-presets">
+                        <button class="preset-btn" data-brightness="20">🌙 Dark</button>
+                        <button class="preset-btn" data-brightness="50">🌗 Dim</button>
+                        <button class="preset-btn" data-brightness="80">☀️ Normal</button>
+                        <button class="preset-btn" data-brightness="100">🔆 Bright</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Simon Jhade Sebios </h1>
+        <p>Web Developer | Designer | Creative Professional</p>
+        <a href="#about" class="btn">Learn More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Simon Jhade Sebios" class="about-image">
+            <div class="about-text">
+                <p>
+                    Hello! I'm a passionate web developer and designer with a love for creating
+                    beautiful and functional websites. With expertise in modern web technologies,
+                    I bring ideas to life through clean code and thoughtful design.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new technologies, contributing
+                    to open-source projects, or sharing knowledge with the developer community.
+                    I believe in continuous learning and staying up-to-date with the latest
+                    industry trends.
+                </p>
+                <p>
+                    My goal is to create digital experiences that are not only visually appealing
+                    but also user-friendly and accessible to everyone.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React, Vue.js</p>
+            </div>
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <p>Node.js, Python, PHP, Database Design</p>
+            </div>
+            <div class="skill-card">
+                <h3>Design</h3>
+                <p>UI/UX Design, Figma, Adobe Creative Suite</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Git, VS Code, Docker, CI/CD</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/voluntech-logo.png" alt="Voluntech Logo" class="project-logo">
+                </div>
+                <div class="project-content">
+                    <h3>Voluntech</h3>
+                    <p>A mobile app platform that connects volunteers with organizations, making it easier for people to find meaningful volunteer opportunities and for organizations to reach passionate volunteers.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/herbivores-logo.png" alt="Herbivores Choice Logo" class="project-logo">
+                </div>
+                <div class="project-content">
+                    <h3>Herbivores Choice</h3>
+                    <p>An e-commerce website for a vegetarian burger patties store based in Canada. Features online ordering, product catalog, and a friendly shopping experience for plant-based food lovers.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image project-js-logo">
+                    <span class="js-text">JS</span>
+                </div>
+                <div class="project-content">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>My self-based portfolio website showcasing my projects, skills, and experience as a web developer. Built with modern web technologies and featuring a clean, responsive design.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+        </p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <a href="mailto:sebiosjhade31@gmail.com">sebiosjhade31@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📘</div>
+                <a href="https://facebook.com/jhadesebios" target="_blank">Facebook</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🐙</div>
+                <a href="https://github.com/SebiosJade" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📸</div>
+                <a href="https://instagram.com/jhdsbios" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Simon Jhade M. Sebios. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Brightness Control
+        const brightnessBtn = document.getElementById('brightnessBtn');
+        const brightnessPanel = document.getElementById('brightnessPanel');
+        const brightnessSlider = document.getElementById('brightnessSlider');
+        const presetBtns = document.querySelectorAll('.preset-btn');
+        const body = document.body;
+        
+        // Load saved brightness
+        const savedBrightness = localStorage.getItem('brightness') || '100';
+        brightnessSlider.value = savedBrightness;
+        applyBrightness(savedBrightness);
+        
+        // Toggle brightness panel
+        brightnessBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            brightnessPanel.classList.toggle('active');
+        });
+        
+        // Close panel when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!brightnessPanel.contains(e.target) && e.target !== brightnessBtn) {
+                brightnessPanel.classList.remove('active');
+            }
+        });
+        
+        // Prevent panel from closing when clicking inside
+        brightnessPanel.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+        
+        // Slider adjustment
+        brightnessSlider.addEventListener('input', (e) => {
+            const brightness = e.target.value;
+            applyBrightness(brightness);
+            localStorage.setItem('brightness', brightness);
+            updateActivePreset(brightness);
+        });
+        
+        // Preset buttons
+        presetBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const brightness = btn.dataset.brightness;
+                brightnessSlider.value = brightness;
+                applyBrightness(brightness);
+                localStorage.setItem('brightness', brightness);
+                updateActivePreset(brightness);
+            });
+        });
+        
+        // Apply brightness function - Improved to adjust opacity instead of filter
+        function applyBrightness(value) {
+            // Remove filter that was making everything black
+            body.style.filter = 'none';
+            
+            // Calculate opacity for dark overlay
+            const darknessLevel = (100 - value) / 100;
+            
+            // Remove existing overlay if present
+            let overlay = document.getElementById('brightness-overlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.id = 'brightness-overlay';
+                overlay.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 9998;
+                    transition: background-color 0.3s ease;
+                `;
+                document.body.appendChild(overlay);
+            }
+            
+            // Adjust overlay darkness
+            overlay.style.backgroundColor = `rgba(0, 0, 0, ${darknessLevel * 0.7})`;
+            
+            // Auto switch theme based on brightness
+            if (value <= 40) {
+                body.classList.remove('light-mode');
+            } else if (value >= 70) {
+                body.classList.add('light-mode');
+            }
+        }
+        
+        // Update active preset button
+        function updateActivePreset(brightness) {
+            presetBtns.forEach(btn => {
+                if (btn.dataset.brightness === brightness) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+        
+        // Initialize active preset
+        updateActivePreset(savedBrightness);
+    </script>
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "c5340c99-6332-4221-b519-30c51687c39a",
+            apiHost: "https://cloud.flowiseai.com",
+        })
+    </script>
+</body>
+</html>
+
