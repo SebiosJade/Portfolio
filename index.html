@@ -275,8 +275,21 @@
         Chatbot.init({
             chatflowid: "c5340c99-6332-4221-b519-30c51687c39a",
             apiHost: "https://cloud.flowiseai.com",
+            theme: {
+                chatWindow: {
+                    showFooter: false
+                }
+            }
         })
     </script>
+    
+    <style>
+        /* Additional CSS to hide Flowise branding */
+        flowise-chatbot::part(footer),
+        flowise-fullchatbot::part(footer) {
+            display: none !important;
+        }
+    </style>
 </body>
 </html>
 
